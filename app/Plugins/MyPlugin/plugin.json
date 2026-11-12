@@ -1,0 +1,9 @@
+{
+    "name": "My Plugin",
+    "slug": "myplugin",
+    "developer": "Ani Anthony",
+    "username" : "@tony",
+    "version": "1.0.0",
+    "description": "A sample plugin that demonstrates activation, routes, and views."
+    
+}

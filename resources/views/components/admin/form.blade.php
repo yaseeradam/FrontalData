@@ -1,0 +1,1 @@
+<form {{ $attributes->merge(['class' => 'max-w-md w-full  ']) }}> {{ $slot }}</form>

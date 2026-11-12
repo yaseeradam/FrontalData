@@ -1,0 +1,1 @@
+<div {{ $attributes->merge(['class' => 'flex relative top-20 px-4' ]) }}> {{ $slot }} </div>

@@ -1,0 +1,1 @@
+<div class="relative p-4 rounded-t-2xl mb-12 bottom-10 bg-white"> {{ $slot }} </div>

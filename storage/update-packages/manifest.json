@@ -1,0 +1,42 @@
+{
+  "status": "VERIFIED",
+  "version": "1.5.11",
+  "download": "https://updates.smedata.com.ng/jannah-vtu-1.5.11.patch.zip",
+  "sha256": "7bfdeca13f79ba874565998a8e48472dd3f7d6d3883f8c506b233253bb5c63b9",
+  "run_migrations": true,
+  "versions": {
+    "1.5.11": {
+      "released": "2026-05-25",
+      "description": "Receipt data quantity detail",
+      "updates": [
+        "Added a Data Quantity row to transaction receipts when a data transaction stores a quantity.",
+        "Applied the receipt quantity row to both the smedata and default themes.",
+        "Built a fresh installable package with the latest receipt and update improvements."
+      ]
+    },
+    "1.5.10": {
+      "released": "2026-05-24",
+      "description": "Mobile data-plan category layout fix",
+      "updates": [
+        "Changed the smedata Buy Data page to use a mobile dropdown for long data-plan categories.",
+        "Kept desktop category pills with wrapping so API category names no longer overlap.",
+        "Improved mobile plan cards to use two columns with wrapped plan names and safer text rendering."
+      ]
+    },
+    "1.5.09": {
+      "released": "2026-05-24",
+      "description": "VTUNAIJA margin-rule save fix and cumulative reliability fixes",
+      "updates": [
+        "Included the VTUNAIJA installer in the hosted patch so existing sites get the latest markup-rule columns.",
+        "Refreshed sync tables before saving markup rules and show a normal admin error if saving fails.",
+        "Added validation-error display and stronger input borders for markup rules.",
+        "Made the VTUNAIJA API token field visibly bordered and added placeholder text.",
+        "Added a VTUNAIJA API setup screen that creates required categories, services, providers, and API configs from one API token.",
+        "Moved VTUNAIJA setup logic into plugin service/controller/view files instead of adding more code to CoreController.",
+        "Added php artisan updates:publish to upload the update ZIP and manifest to the FTP update host.",
+        "The publisher reads Cyberduck .duck bookmarks, verifies package checksums, uploads the ZIP before the manifest, and verifies the uploaded manifest.",
+        "Includes the prior dashboard, transaction idempotency, hosted updater, and update timeline fixes."
+      ]
+    }
+  }
+}

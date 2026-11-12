@@ -1,0 +1,1 @@
+<div class="flex bg-red-100 p-3 rounded-xl alert text-sm justify-center center align-center">No {{ $type }} Available at the moment!</div>

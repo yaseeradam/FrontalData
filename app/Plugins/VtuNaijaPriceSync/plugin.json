@@ -1,0 +1,7 @@
+{
+  "name": "VTUNAIJA Price Sync",
+  "version": "1.0.0",
+  "description": "Fetch VTUNAIJA data, cable TV, and electricity catalogs, preview local product price changes, and apply selected updates.",
+  "developer": "Al Manarah",
+  "username": "al-manarah"
+}

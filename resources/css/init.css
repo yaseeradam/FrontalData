@@ -1,0 +1,21 @@
+.bg-white {
+    background: white !important;
+}
+.box {
+    width: 40px !important;
+    height: 40px !important;
+    padding: 9px !important;
+}
+.box-inner {
+    position: relative;
+    top: -3px !important;
+}
+.bg-ash {
+    background: #f7f7f7 !important;
+}
+.border-ash {
+    border: 1px solid #f1f1f1 !important;
+}
+.bmi {
+    font-size: 25px;
+}

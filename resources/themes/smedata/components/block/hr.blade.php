@@ -1,0 +1,1 @@
+<hr class="border border-sm border-gray-200 my-8"></hr>

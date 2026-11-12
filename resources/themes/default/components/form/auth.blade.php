@@ -1,0 +1,1 @@
+<form {{ $attributes->merge(['class' => 'mt-12']) }}> {{ $slot }}</form>

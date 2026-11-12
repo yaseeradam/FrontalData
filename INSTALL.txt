@@ -1,0 +1,36 @@
+INSTALLATION
+============
+
+1. Upload this zip to your server and extract it. Where you extract it is
+   up to you, but the contents need to live somewhere your web server can
+   read them.
+
+2. Point your domain's document root at the `public/` folder inside the
+   extracted directory.
+
+   On cPanel:   Domains → (your domain) → Document Root → set to
+                /home/<user>/<extracted_folder>/public
+   On Plesk:    Hosting & DNS → Hosting Settings → Document root
+   On nginx:    root /var/www/<extracted_folder>/public;
+   On Apache:   DocumentRoot /var/www/<extracted_folder>/public
+
+3. Make sure the `storage/` and `bootstrap/cache/` directories are writable
+   by the web server (typically chmod -R 775).
+
+4. Create an empty MySQL database and a user with full privileges on it.
+
+5. Visit https://your-site.com/install/ in a browser and walk through the
+   four installer steps (database, mail, app URL, admin user).
+
+6. After installation completes, DELETE the `public/install/` directory
+   from the server. The installer is no longer needed and should not be
+   reachable.
+
+REQUIREMENTS
+============
+- PHP 8.2 or newer
+- MySQL 5.7+ / MariaDB 10.3+
+- PHP extensions: bcmath, ctype, curl, fileinfo, mbstring, openssl, pdo,
+  pdo_mysql, tokenizer, xml, zip
+- proc_open OR shell_exec must be enabled (the installer uses one of them to
+  run `php artisan migrate`/`db:seed`)
